@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+background: linear-gradient(135deg, #4203a9, #90bafc);
+width: 100%;
+min-height: 100vh;
+color: #fff;
+padding: 10px;
+}
+
+.card{
+    margin-top: 10%;
+    margin-left: 10%;
+    max-width: max-content;
+}
+
+.card h1{
+    font-size: 5rem;
+}
+.card span{
+    font-size: 5rem;
+    color: #ffff76;
+}
+
+.inpbox{
+    margin: 40px 0px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.inpbox input{
+    flex-grow: 2;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    border: navajowhite;
+}
+button{
+    flex-grow: 0.6;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    background: #ffab30;
+    cursor: pointer;
+}
+.result{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width:700px){
+    .card{
+        max-width: min-content;
+    }
+}
+@media (max-width:530px){
+    .card{
+        text-align: center;
+    }
+    .card h1{
+        font-size: 3.5rem;
+    }
+    .card span{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width:400px){
+    .card{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .inpbox{
+        padding: 20px;
+    }
+    .inpbox input{
+        flex-grow: 1;
+    }
+    button{
+        flex-grow: 0.3;
+    }
+}
+
+@media (max-width:350px){
+    button{
+        font-size: 0.9rem;
+    }
+    .inpbox input{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:325px){
+    .card{
+        min-width: 90%;
+    }
+    .card h1{
+        font-size: 2.7rem;
+    }
+    .card span{
+        font-size: 2.7rem;
+    }
+    .inpbox{
+        display: inline-block;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .inpbox input{
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    button{
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 240px){
+    .card h1{
+        font-size: 2rem;
+    }
+    .card span{
+        font-size: 2rem;
+    }
+    .inpbox{
+        margin-left: -10px;
+    }
+    .inpbox input{
+        margin-right: 0px;
+    }
+}
